@@ -1,0 +1,21 @@
+{
+    "name": "hexlet/code",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tatiana Antonova",
+            "email": "to.antonova@mail.ru"
+        }
+    ],
+    "description": "hexlet project 45",
+    "license": "MIT",
+    "require": {},
+    "bin": [
+	 "bin/brain-games"
+    ]
+
+}
