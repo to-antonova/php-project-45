@@ -9,3 +9,5 @@ lint: # запуск phpcs
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 brain-even: # запуск игры "Проверка на четность"
 	./bin/brain-even
+brain-calc: # запуск игры "Калькулятор"
+	./bin/brain-calc
