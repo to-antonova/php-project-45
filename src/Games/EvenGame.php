@@ -1,0 +1,20 @@
+<?php
+
+namespace BrainGames\Cli;
+
+function isEven($number): string
+{
+    return $number % 2 === 0 ? 'yes' : 'no';
+}
+
+function evenGame(): void
+{
+    $taskText = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+    $questionAndRightAnswer = function () {
+        $question = rand(0, 100);
+        return [$question, isEven($question)];
+    };
+
+    startGame($taskText, $questionAndRightAnswer);
+}

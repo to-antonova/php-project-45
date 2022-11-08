@@ -3,8 +3,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/Games/ParityCheck.php",
-            "src/Games/CalcGame.php"
+            "src/Games/EvenGame.php",
+            "src/Games/CalcGame.php",
+            "src/Engine.php"
             ]
     },
     "authors": [
