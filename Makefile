@@ -7,3 +7,5 @@ validate: # проверка файла composer.json
 	composer validate
 lint: # запуск phpcs
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
+brain-even: # запуск игры "Проверка на четность"
+	./bin/brain-even
