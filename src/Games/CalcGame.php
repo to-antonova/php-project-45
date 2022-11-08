@@ -8,12 +8,13 @@ use function cli\prompt;
 
 function resultOfCalculation($number1, $number2, $sign): int
 {
-    if ($sign === '+') {
-        return $number1 + $number2;
-    } elseif ($sign === '-') {
-        return $number1 - $number2;
-    } elseif ($sign === '*') {
-        return $number1 * $number2;
+    switch ($sign) {
+        case '-':
+            return $number1 - $number2;
+        case '*':
+            return $number1 * $number2;
+        default:
+            return $number1 + $number2;
     }
 }
 
