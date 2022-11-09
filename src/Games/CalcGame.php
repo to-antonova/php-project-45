@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-function resultOfCalculation($number1, $number2, $sign): int
+function getResultOfCalculation($number1, $number2, $sign): int
 {
     switch ($sign) {
         case '-':
@@ -14,12 +14,7 @@ function resultOfCalculation($number1, $number2, $sign): int
     }
 }
 
-function writeExpression($number1, $number2, $sign) : string
-{
-    return $number1 . $sign . $number2;
-}
-
-function calcGame(): void
+function runCalcGame(): void
 {
     $taskText = 'What is the result of the expression?';
 
@@ -29,7 +24,7 @@ function calcGame(): void
         $signArray = array('+', '-', '*');
         $sign = $signArray[rand(0, 2)];
         $question = $number1 . $sign . $number2;
-        $rightAnswer = resultOfCalculation($number1, $number2, $sign);
+        $rightAnswer = getResultOfCalculation($number1, $number2, $sign);
         return [$question, $rightAnswer];
     };
 

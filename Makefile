@@ -11,3 +11,5 @@ brain-even: # запуск игры "Проверка на четность"
 	./bin/brain-even
 brain-calc: # запуск игры "Калькулятор"
 	./bin/brain-calc
+brain-gcd: # запуск игры "НОД"
+	./bin/brain-gcd

@@ -9,3 +9,6 @@ https://asciinema.org/a/535827
 
 Аскинема (игра make brain-calc):
 https://asciinema.org/a/535828
+
+Аскинема (игра make brain-gcd):
+https://asciinema.org/a/536277
