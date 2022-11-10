@@ -40,7 +40,7 @@ function runGcdGame()
         $number2 = rand(0, 100);
         $question = $number1 . ' ' . $number2;
         $rightAnswer = gcd("$number1", "$number2");
-        return [$question, $rightAnswer];
+        return [$question, (string)$rightAnswer];
     };
 
     startGame($taskText, $questionAndRightAnswer);

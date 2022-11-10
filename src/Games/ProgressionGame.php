@@ -28,7 +28,7 @@ function runProgressionGame()
         $progressionWithMissingNumber = str_replace($searchForStrReplace, $hidingSymbol, $strProgression);
         $question = $progressionWithMissingNumber;
         $rightAnswer = $missingNumber;
-        return [$question, $rightAnswer];
+        return [$question, (string)$rightAnswer];
     };
 
     startGame($taskText, $questionAndRightAnswer);

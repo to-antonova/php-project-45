@@ -25,7 +25,7 @@ function runCalcGame(): void
         $sign = $signArray[rand(0, 2)];
         $question = $number1 . $sign . $number2;
         $rightAnswer = getResultOfCalculation($number1, $number2, $sign);
-        return [$question, $rightAnswer];
+        return [$question, (string)$rightAnswer];
     };
 
     startGame($taskText, $questionAndRightAnswer);

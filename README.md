@@ -15,3 +15,6 @@ https://asciinema.org/a/536277
 
 Аскинема (игра make brain-progression):
 https://asciinema.org/a/536459
+
+Аскинема (игра make brain-prime):
+https://asciinema.org/a/536466
