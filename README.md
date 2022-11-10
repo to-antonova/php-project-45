@@ -12,3 +12,6 @@ https://asciinema.org/a/535828
 
 Аскинема (игра make brain-gcd):
 https://asciinema.org/a/536277
+
+Аскинема (игра make brain-progression):
+https://asciinema.org/a/536459

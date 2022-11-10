@@ -13,3 +13,5 @@ brain-calc: # запуск игры "Калькулятор"
 	./bin/brain-calc
 brain-gcd: # запуск игры "НОД"
 	./bin/brain-gcd
+brain-progression: # запуск игры "Арифметическая прогрессия"
+	./bin/brain-progression
