@@ -17,7 +17,7 @@ function startGame($taskText, $questionAndRightAnswer)
         [$question, $rightAnswer] = $questionAndRightAnswer();
         line('Question: %s', $question);
         $answer = prompt('Your answer');
-        if ($rightAnswer !== (int)$answer) {
+        if ($rightAnswer !== $answer) {              // здесь перед answer стоял int видимо для какой-то численной игры
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
             line("Let's try again, %s!", $name);
             return;

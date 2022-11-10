@@ -15,3 +15,5 @@ brain-gcd: # запуск игры "НОД"
 	./bin/brain-gcd
 brain-progression: # запуск игры "Арифметическая прогрессия"
 	./bin/brain-progression
+brain-prime: # запуск игры "Простое ли число?"
+	./bin/brain-prime
