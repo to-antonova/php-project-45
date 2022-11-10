@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-function isEven($number): string
+function isEven(int $number): string
 {
     return $number % 2 === 0 ? 'yes' : 'no';
 }

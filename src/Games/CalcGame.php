@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-function getResultOfCalculation($number1, $number2, $sign): int
+function getResultOfCalculation(int $number1, int $number2, string $sign): int
 {
     switch ($sign) {
         case ' - ':

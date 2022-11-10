@@ -7,7 +7,7 @@ use function cli\prompt;
 
 define("MAX_ATTEMPT", 3);
 
-function startGame($taskText, $questionAndRightAnswer)
+function startGame(string $taskText, callable $questionAndRightAnswer)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
