@@ -9,9 +9,10 @@ function getResultOfCalculation($number1, $number2, $sign): int
             return $number1 - $number2;
         case '*':
             return $number1 * $number2;
-        default:
-            return $number1 + $number2; //лучше бы default сообщение об ошибке
+        case '+':
+            return $number1 + $number2;
     }
+    return 0;
 }
 
 function runCalcGame(): void
