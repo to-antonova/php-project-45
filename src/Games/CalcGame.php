@@ -5,9 +5,9 @@ namespace BrainGames\Cli;
 function getResultOfCalculation($number1, $number2, $sign): int
 {
     switch ($sign) {
-        case '-':
+        case ' - ':
             return $number1 - $number2;
-        case '*':
+        case ' * ':
             return $number1 * $number2;
         default:
             return $number1 + $number2;
@@ -21,7 +21,7 @@ function runCalcGame(): void
     $questionAndRightAnswer = function () {
         $number1 = rand(0, 10);
         $number2 = rand(0, 10);
-        $signArray = array('+', '-', '*');
+        $signArray = array(' + ', ' - ', ' * ');
         $sign = $signArray[rand(0, 2)];
         $question = $number1 . $sign . $number2;
         $rightAnswer = getResultOfCalculation($number1, $number2, $sign);
