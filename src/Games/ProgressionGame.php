@@ -2,14 +2,14 @@
 
 namespace BrainGames\Cli;
 
-function getRandomProgression() : array
+function getRandomProgression(): array
 {
     $progression = [];
     $progression[] = rand(0, 10);
     $countOfNumbers = 10;
     $increment = rand(1, 5);
     for ($i = 1; $i < $countOfNumbers; $i++) {
-        $progression[$i] = $progression[$i-1] + $increment;
+        $progression[$i] = $progression[$i - 1] + $increment;
     }
     return $progression;
 }

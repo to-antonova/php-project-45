@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-function gcd($number1, $number2) : int
+function gcd($number1, $number2): int
 {
     if ($number1 === 0) {
         return $number2;
