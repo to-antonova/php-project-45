@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Engine;
 
 function isPrime(int $number): string
 {

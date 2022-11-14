@@ -1,16 +1,19 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Engine;
 
 function getResultOfCalculation(int $number1, int $number2, string $sign): int
 {
     switch ($sign) {
+        case ' + ':
+            return $number1 + $number2;
         case ' - ':
             return $number1 - $number2;
         case ' * ':
             return $number1 * $number2;
         default:
-            return $number1 + $number2;
+            echo 'Error! Unknown math sign: "' . $sign . '"!' . PHP_EOL;
+            exit();
     }
 }
 
@@ -21,7 +24,7 @@ function runCalcGame(): void
     $questionAndRightAnswer = function () {
         $number1 = rand(0, 10);
         $number2 = rand(0, 10);
-        $signArray = array(' + ', ' - ', ' * ');
+        $signArray = [' + ', ' - ', ' * '];
         $sign = $signArray[rand(0, 2)];
         $question = $number1 . $sign . $number2;
         $rightAnswer = getResultOfCalculation($number1, $number2, $sign);

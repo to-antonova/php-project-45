@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Engine;
 
 function gcd(int $number1, int $number2): int
 {

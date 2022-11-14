@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Engine;
 
 use function cli\line;
 use function cli\prompt;
@@ -21,9 +21,8 @@ function startGame(string $taskText, callable $questionAndRightAnswer)
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
             line("Let's try again, %s!", $name);
             return;
-        } else {
-            line("Correct!");
         }
+        line("Correct!");
     }
     line('Congratulations, %s!', $name);
 }
