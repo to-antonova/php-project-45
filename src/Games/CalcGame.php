@@ -3,6 +3,7 @@
 namespace BrainGames\Games;
 
 use Exception;
+
 use function BrainGames\startGame;
 
 function getResultOfCalculation(int $number1, int $number2, string $sign): int
