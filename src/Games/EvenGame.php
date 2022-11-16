@@ -2,9 +2,9 @@
 
 namespace BrainGames\Engine;
 
-function isEven(int $number): string
+function isEven(int $number): bool
 {
-    return $number % 2 === 0 ? 'yes' : 'no';
+    return $number % 2 === 0;
 }
 
 function runEvenGame(): void
@@ -13,7 +13,8 @@ function runEvenGame(): void
 
     $questionAndRightAnswer = function () {
         $question = rand(0, 100);
-        return [$question, isEven($question)];
+        $rightAnswer = isEven($question) ? 'yes' : 'no';
+        return [$question, $rightAnswer];
     };
 
     startGame($taskText, $questionAndRightAnswer);
