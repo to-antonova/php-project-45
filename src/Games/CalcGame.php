@@ -2,6 +2,8 @@
 
 namespace BrainGames\Engine;
 
+use Exception;
+
 function getResultOfCalculation(int $number1, int $number2, string $sign): int
 {
     switch ($sign) {
@@ -12,8 +14,7 @@ function getResultOfCalculation(int $number1, int $number2, string $sign): int
         case ' * ':
             return $number1 * $number2;
         default:
-            echo 'Error! Unknown math sign: "' . $sign . '"!' . PHP_EOL;
-            exit();
+            throw new Exception('Error! Unknown math sign: "' . $sign . '"!' . PHP_EOL);
     }
 }
 
