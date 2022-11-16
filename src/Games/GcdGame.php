@@ -22,11 +22,11 @@ function gcd(int $number1, int $number2): int
     $modulo = $dividend % $divider;
     $dividend = $divider;
     $divider = $modulo;
-    while ($modulo !== 0) :
+    while ($modulo !== 0) {
         $modulo = $dividend % $divider;
         $dividend = $divider;
         $divider = $modulo;
-    endwhile;
+    }
 
     return $dividend;
 }
