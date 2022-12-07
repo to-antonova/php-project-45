@@ -1,10 +1,10 @@
 <?php
 
-namespace BrainGames\Games;
+namespace BrainGames\Games\CalcGame;
 
 use Exception;
 
-use function BrainGames\startGame;
+use function BrainGames\Engine\startGame;
 
 function getResultOfCalculation(int $number1, int $number2, string $sign): int
 {

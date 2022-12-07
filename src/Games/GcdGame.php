@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\Games;
+namespace BrainGames\Games\GcdGame;
 
-use function BrainGames\startGame;
+use function BrainGames\Engine\startGame;
 
 function gcd(int $number1, int $number2): int
 {
