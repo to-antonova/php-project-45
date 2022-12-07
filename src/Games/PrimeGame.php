@@ -6,14 +6,12 @@ use function BrainGames\Engine\startGame;
 
 function isPrime(int $number): bool
 {
-    $check = 0;
-    for ($i = 2; ($i * $i <= $number) && ($check !== 1); $i++) {
+    for ($i = 2; $i * $i <= $number; $i++) {
         if ($number % $i === 0) {
-            $check = 1;
+            return false;
         }
     }
-
-    return ($check !== 1);
+    return true;
 }
 
 function runPrimeGame()
