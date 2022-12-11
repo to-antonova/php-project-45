@@ -4,6 +4,8 @@ namespace BrainGames\Games\PrimeGame;
 
 use function BrainGames\Engine\startGame;
 
+define("TASK_TEXT_PRIME", 'Answer "yes" if given number is prime. Otherwise answer "no".');
+
 function isPrime(int $number): bool
 {
     for ($i = 2; $i * $i <= $number; $i++) {
@@ -14,10 +16,8 @@ function isPrime(int $number): bool
     return true;
 }
 
-function runPrimeGame()
+function runGame()
 {
-    $taskText = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
     $questionAndRightAnswer = function () {
         $number = rand(2, 100);
         $question = $number;
@@ -25,5 +25,5 @@ function runPrimeGame()
         return [$question, $rightAnswer];
     };
 
-    startGame($taskText, $questionAndRightAnswer);
+    startGame(TASK_TEXT_PRIME, $questionAndRightAnswer);
 }

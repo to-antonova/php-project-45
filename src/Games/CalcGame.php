@@ -6,6 +6,8 @@ use Exception;
 
 use function BrainGames\Engine\startGame;
 
+define("TASK_TEXT_CALC", 'What is the result of the expression?');
+
 function getResultOfCalculation(int $number1, int $number2, string $sign): int
 {
     switch ($sign) {
@@ -20,10 +22,8 @@ function getResultOfCalculation(int $number1, int $number2, string $sign): int
     }
 }
 
-function runCalcGame(): void
+function runGame(): void
 {
-    $taskText = 'What is the result of the expression?';
-
     $questionAndRightAnswer = function () {
         $number1 = rand(0, 10);
         $number2 = rand(0, 10);
@@ -34,5 +34,5 @@ function runCalcGame(): void
         return [$question, (string)$rightAnswer];
     };
 
-    startGame($taskText, $questionAndRightAnswer);
+    startGame(TASK_TEXT_CALC, $questionAndRightAnswer);
 }
