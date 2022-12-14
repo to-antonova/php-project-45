@@ -8,6 +8,10 @@ define("TASK_TEXT_PRIME", 'Answer "yes" if given number is prime. Otherwise answ
 
 function isPrime(int $number): bool
 {
+    if ($number <= 1) {
+        return false;
+    }
+
     for ($i = 2; $i * $i <= $number; $i++) {
         if ($number % $i === 0) {
             return false;
@@ -19,7 +23,7 @@ function isPrime(int $number): bool
 function runGame()
 {
     $questionAndRightAnswer = function () {
-        $number = rand(2, 100);
+        $number = rand(0, 100);
         $question = $number;
         $rightAnswer = isPrime($number) ? 'yes' : 'no';
         return [$question, $rightAnswer];
