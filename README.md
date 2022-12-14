@@ -5,6 +5,12 @@
 
 <a href="https://codeclimate.com/github/to-antonova/php-project-45/maintainability"><img src="https://api.codeclimate.com/v1/badges/b432411e6bc12f9d7480/maintainability" /></a>
 
+### Требования к игре:
+
+* PHP версии 7 и выше (https://www.php.net/downloads.php)
+* Composer (https://getcomposer.org/download/)
+
+
 ### Установка:
 
 $ git clone https://github.com/to-antonova/php-project-45.git
