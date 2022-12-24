@@ -8,12 +8,15 @@ define("TASK_TEXT_PROGRESSION", 'What number is missing in the progression?');
 
 function getRandomProgression(): array
 {
-    $progression = [];
-    $progression[] = rand(0, 10);
-    $countOfNumbers = 10;
+
+    $firstTerm = rand(0, 10);
     $increment = rand(1, 5);
+    $countOfNumbers = 10;
+    $progression = [];
+    $progression[] = $firstTerm;
+
     for ($i = 1; $i < $countOfNumbers; $i++) {
-        $progression[$i] = $progression[$i - 1] + $increment;
+        $progression[$i] = $firstTerm + $i * $increment;
     }
     return $progression;
 }
