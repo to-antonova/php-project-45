@@ -13,9 +13,8 @@ function getRandomProgression(): array
     $increment = rand(1, 5);
     $countOfNumbers = 10;
     $progression = [];
-    $progression[] = $firstTerm;
 
-    for ($i = 1; $i < $countOfNumbers; $i++) {
+    for ($i = 0; $i < $countOfNumbers; $i++) {
         $progression[$i] = $firstTerm + $i * $increment;
     }
     return $progression;
@@ -26,13 +25,11 @@ function runGame()
 {
     $questionAndRightAnswer = function () {
         $progression = getRandomProgression();
-        $missingNumber = $progression[rand(1, 8)];
-        $strProgression = implode(' ', $progression);
-        $searchForStrReplace = ' ' . $missingNumber . ' ';
-        $hidingSymbol = ' .. ';
-        $progressionWithMissingNumber = str_replace($searchForStrReplace, $hidingSymbol, $strProgression);
-        $question = $progressionWithMissingNumber;
-        $rightAnswer = $missingNumber;
+        $indexOfMissingNumber = rand(0, 9);
+        $progressionWithMissingNumber = array_replace($progression, array($indexOfMissingNumber => '..'));
+
+        $question = implode(' ', $progressionWithMissingNumber);
+        $rightAnswer = $progression[$indexOfMissingNumber];
         return [$question, (string)$rightAnswer];
     };
 
