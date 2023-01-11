@@ -4,7 +4,7 @@ namespace BrainGames\Games\GcdGame;
 
 use function BrainGames\Engine\startGame;
 
-define("TASK_TEXT_GCD", 'Find the greatest common divisor of given numbers.');
+const TASK_TEXT = 'Find the greatest common divisor of given numbers.';
 
 function gcd(int $number1, int $number2): int
 {
@@ -42,5 +42,5 @@ function runGame()
         return [$question, (string)$rightAnswer];
     };
 
-    startGame(TASK_TEXT_GCD, $questionAndRightAnswer);
+    startGame(TASK_TEXT, $questionAndRightAnswer);
 }

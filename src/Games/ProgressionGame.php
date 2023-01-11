@@ -4,7 +4,7 @@ namespace BrainGames\Games\ProgressionGame;
 
 use function BrainGames\Engine\startGame;
 
-define("TASK_TEXT_PROGRESSION", 'What number is missing in the progression?');
+const TASK_TEXT = 'What number is missing in the progression?';
 
 function getRandomProgression(): array
 {
@@ -33,5 +33,5 @@ function runGame()
         return [$question, (string)$rightAnswer];
     };
 
-    startGame(TASK_TEXT_PROGRESSION, $questionAndRightAnswer);
+    startGame(TASK_TEXT, $questionAndRightAnswer);
 }
