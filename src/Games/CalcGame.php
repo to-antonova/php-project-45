@@ -28,7 +28,7 @@ function runGame(): void
         $number1 = rand(0, 10);
         $number2 = rand(0, 10);
         $signArray = [' + ', ' - ', ' * '];
-        $sign = $signArray[rand(0, 2)];
+        $sign = array_rand($signArray);
         $question = $number1 . $sign . $number2;
         $rightAnswer = getResultOfCalculation($number1, $number2, $sign);
         return [$question, (string)$rightAnswer];
