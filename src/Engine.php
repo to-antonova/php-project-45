@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-define("MAX_ATTEMPT", 3);
+const MAX_ATTEMPT = 3;
 
 function startGame(string $taskText, callable $questionAndRightAnswer)
 {
