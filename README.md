@@ -38,16 +38,16 @@ $ make install
 ### Примеры прохождения игр:
 
 Аскинема (установка зависимостей make install, игра make brain-even):
-https://asciinema.org/a/535827
+[![asciicast](https://asciinema.org/a/535827.svg)](https://asciinema.org/a/535827)
 
 Аскинема (игра make brain-calc):
-https://asciinema.org/a/535828
+[![asciicast](https://asciinema.org/a/535828.svg)](https://asciinema.org/a/535828)
 
 Аскинема (игра make brain-gcd):
-https://asciinema.org/a/536277
+[![asciicast](https://asciinema.org/a/536277.svg)](https://asciinema.org/a/536277)
 
 Аскинема (игра make brain-progression):
-https://asciinema.org/a/536459
+[![asciicast](https://asciinema.org/a/536459.svg)](https://asciinema.org/a/536459)
 
 Аскинема (игра make brain-prime):
-https://asciinema.org/a/536466
+[![asciicast](https://asciinema.org/a/536466.svg)](https://asciinema.org/a/536466)
